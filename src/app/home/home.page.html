@@ -14,23 +14,64 @@
 <ion-grid> 
   <ion-row class="ion-padding">
     <ion-col size="12" class="radus5 borderlight w100 ">
-      <ion-grid> 
-        <ion-row class="gyg" >
-          <ion-item class="w100">
-            <ion-label>header label </ion-label>
+      <ion-grid class="ion-no-padding" dir="rtl"> 
+        <ion-row  >
+          <ion-item class="w100" lines="none">
+          
             <ion-badge slot="end">
               live class 
               <ion-icon slot="end" name="ellipse" color="danger"></ion-icon> 
             </ion-badge>
+            <ion-label>IPHONE PRO 13</ion-label>
           </ion-item>
         </ion-row>
         <!-- imager and detail -->
-        <ion-row>
+        <ion-row  >
           <ion-col size="6" >
-            <ion-img class="radus5" src="../../assets/imgs/test.jpg"></ion-img>
+            <ion-grid  dir ="rtl" class="ion-no-padding"> 
+              <ion-row >
+                   <ion-img class="radus5" src="../../assets/imgs/iPhone2.jpg"></ion-img>
+              </ion-row>
+              <!-- <ion-row>
+                <ion-col size="3">
+                  <ion-label>  <ion-text>يبدأ بعد</ion-text> </ion-label>
+                </ion-col>
+                <ion-col size="9">
+                       <h6>
+                  <ion-text>يوم : </ion-text>
+                  <ion-text>ساعة  : </ion-text>
+                  <ion-text>دقيقة : </ion-text>
+                  <ion-text>ثانية  </ion-text>
+                </h6>
+                <h6>
+                  <ion-text>{{da}} : </ion-text> 
+                  <ion-text>{{hr}} : </ion-text>
+                  <ion-text>{{mn}} : </ion-text>
+                  <ion-text>{{sc}}  </ion-text>
+                </h6>
+                </ion-col>
+           
+              </ion-row> -->
+              </ion-grid>
+         
+           
           </ion-col>
           <ion-col size="6">
-            <ion-label>header label </ion-label>
+            <ion-grid   dir ="rtl" class="ion-no-padding">
+              <ion-row class="ion-margin">
+                <ion-label > 
+                  <ion-text >{{startDate}} :</ion-text>    
+                  <ion-text  color="primary"> <b>{{startDate | date:'EEE'}}</b> </ion-text>
+                </ion-label>
+              </ion-row>
+              <ion-row  class="ion-margin">
+                <ion-label> 
+                  <ion-text color="primary"><b>العربون :</b>  </ion-text>
+                  <ion-text>   3000 </ion-text>
+                  <ion-text>   ر.س </ion-text>
+                </ion-label>
+              </ion-row>
+            </ion-grid> 
           </ion-col>
         </ion-row>
         </ion-grid>
