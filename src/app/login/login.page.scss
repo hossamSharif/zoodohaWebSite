@@ -1,12 +1,23 @@
- .head2{ 
-    border-bottom-right-radius: 30%;
-    border-bottom-left-radius: 30%; 
-    background-color: var(--ion-color-primary);
-    height: 270px;
-}
+
 .header-md::after {
     background-image:none;
 }
 .bordernon{
     border: none;
+}
+.custH{
+    border-bottom-style: solid;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+}
+.custGrid{
+    position: relative;
+    top: -130px;
+}
+.footer-md::before{
+    background-image:  none;
+}
+.borderNone{
+    border-radius: 0px;
 }

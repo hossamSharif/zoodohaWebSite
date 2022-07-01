@@ -1,9 +1,111 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>signUp</ion-title>
+  <ion-toolbar color="primary">
+   <ion-buttons slot="start">
+    <ion-button fill="clear" >
+      <ion-icon name="arrow-back-outline" color="light"></ion-icon>
+    </ion-button>
+   </ion-buttons>
+    <ion-title>Sign Up</ion-title>
   </ion-toolbar>
+  
+
 </ion-header>
 
 <ion-content>
-
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col size="12" class="head2 ">
+        <!-- <ion-img src="../../assets/imgs/"></ion-img> -->
+     </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid class="custGrid ">
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="10" >
+       <ion-card class="bordernon w100" >
+        <ion-card-header>
+          <ion-card-title>
+           <h3 class="custH"><b>sign Up</b></h3> 
+          </ion-card-title>
+        </ion-card-header>
+         <ion-grid>
+          <ion-row class="ion-text-center">
+            <ion-col size="6">
+              <ion-item button  color="light">
+                <ion-icon name="logo-google" color="red"></ion-icon> 
+                 Google
+              </ion-item>
+            </ion-col>
+            <ion-col size="6">
+              <ion-item button color="light">
+                <ion-icon name="logo-facebook"></ion-icon>
+                 Facebook
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row class="ion-margin">
+            <ion-col size="3">
+              <ion-label>ـــــــــــــــــ</ion-label>
+            </ion-col>
+            <ion-col size="5" class="ion-text-center">
+               <ion-label>Or sign Up with</ion-label>
+            </ion-col>
+            <ion-col size="3">
+              <ion-label>ـــــــــــــــــ</ion-label> 
+            </ion-col>
+          </ion-row>
+          
+          <ion-row class="ion-margin">
+            <ion-list>
+              <ion-item >
+                <ion-label position="floating">Full Name</ion-label> 
+                <ion-input></ion-input>
+                <!-- <ion-icon name="eye-outline"></ion-icon> -->
+                <ion-icon slot="end" name="eye-off-outline"></ion-icon>
+              </ion-item>
+              <ion-item >
+                <ion-label position="floating">User name</ion-label> 
+                <ion-input></ion-input>
+                <!-- <ion-icon name="eye-outline"></ion-icon> -->
+                <ion-icon slot="end" name="eye-off-outline"></ion-icon>
+              </ion-item>
+              <ion-item >
+                <ion-label position="floating">Phone</ion-label> 
+                <ion-input></ion-input>
+                <!-- <ion-icon name="eye-outline"></ion-icon> -->
+                <ion-icon slot="end" name="eye-off-outline"></ion-icon>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">Password</ion-label> 
+                <ion-input></ion-input>
+                <ion-icon  slot="end"  name="checkmark-outline" color="success"></ion-icon>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">Confirm Password</ion-label> 
+                <ion-input></ion-input>
+                <ion-icon  slot="end"  name="checkmark-outline" color="success"></ion-icon>
+              </ion-item>
+              <ion-row class="ion-justify-content-end">
+                <ion-button fill="clear">
+                  <ion-label><ion-text color="primary"><b>Forget?</b></ion-text></ion-label>
+                </ion-button>
+              </ion-row> 
+            </ion-list>
+          </ion-row> 
+          <ion-row class="ion-margin">
+            <ion-col size="12">
+              <ion-item color="primary" button >
+                <ion-label class="ion-text-center">sign Up</ion-label>
+                
+              </ion-item>
+            </ion-col>
+          </ion-row> 
+         </ion-grid> 
+        </ion-card>
+      </ion-col>
+      </ion-row>
+  
+  </ion-grid>
+ 
 </ion-content>
+ 
