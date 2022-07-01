@@ -7,12 +7,8 @@ const routes: Routes = [
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
   },
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
-    path: 'mzad-details',
-    loadChildren: () => import('./mzad-details/mzad-details.module').then( m => m.MzadDetailsPageModule)
+    path: 'mazad-details',
+    loadChildren: () => import('./mzad-details/mzad-details.module').then(m => m.MzadDetailsPageModule)
   },
   {
     path: 'login',

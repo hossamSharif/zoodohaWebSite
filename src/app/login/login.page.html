@@ -1,9 +1,87 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
+   <ion-buttons slot="start">
+    <ion-button fill="clear" >
+      <ion-icon name="back-arrow" color="light"></ion-icon>
+    </ion-button>
+   </ion-buttons>
     <ion-title>login</ion-title>
   </ion-toolbar>
+  <ion-grid class="ion-no-padding">
+    <ion-row>
+      <ion-col size="12" class="head2">
+        
+     </ion-col>
+    </ion-row>
+  </ion-grid>
+
 </ion-header>
 
 <ion-content>
 
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="10" >
+       <ion-card class="bordernon w100" >
+        <ion-card-header>
+          <ion-card-title>
+            Login
+          </ion-card-title>
+        </ion-card-header>
+         <ion-grid>
+          <ion-row>
+            <ion-col size="6">
+              <ion-button expand="full" color="light">
+                <ion-icon name="trash"></ion-icon>
+                 Google
+              </ion-button>
+            </ion-col>
+            <ion-col size="6">
+              <ion-button expand="full" color="light">
+                <ion-icon name="trash"></ion-icon>
+                 Facebook
+              </ion-button>
+            </ion-col>
+          </ion-row>
+          <ion-row class="ion-margin">
+            <ion-col size="3">
+              <ion-label>ــــــــــ</ion-label>
+            </ion-col>
+            <ion-col size="5" class="ion-text-center">
+               <ion-label>Or login with</ion-label>
+            </ion-col>
+            <ion-col size="3">
+              <ion-label>ــــــــــ</ion-label> 
+            </ion-col>
+          </ion-row>
+          
+          <ion-row class="ion-margin">
+            <ion-list>
+              <ion-item>
+                <ion-label>E-mail</ion-label> 
+                <ion-input></ion-input>
+                <ion-icon name="eye" slot="end"></ion-icon>
+              </ion-item>
+              <ion-item>
+                <ion-label>Password</ion-label> 
+                <ion-input></ion-input>
+                <ion-icon name="eye" slot="end"></ion-icon>
+              </ion-item>
+              <ion-label><ion-text color="primary"><b>Forget?</b></ion-text></ion-label>
+            </ion-list>
+          </ion-row> 
+          <ion-row class="ion-margin">
+            <ion-col size="12">
+              <ion-item color="primary" button>
+                
+              </ion-item>
+            </ion-col>
+          </ion-row>
+
+         </ion-grid> 
+        </ion-card>
+      </ion-col>
+      </ion-row>
+  </ion-grid>
+  
 </ion-content>

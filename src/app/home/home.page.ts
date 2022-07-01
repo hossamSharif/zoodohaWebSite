@@ -1,13 +1,18 @@
 import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Observable, timer } from 'rxjs';
-
+import { NavigationExtras, Router } from '@angular/router'
 @Component({
   selector: 'app-home',
   templateUrl: './home.page.html',
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
+
+   slideOpts = {
+    slidesPerView: 3,
+    nitialSlide: 0
+  }
 
   startDate
   startAfter
@@ -43,7 +48,7 @@ export class HomePage implements OnInit {
       // const numbers = timer(5000);
       // numbers.subscribe(x => console.log(x))
 
-  constructor(private datePipe:DatePipe) {
+  constructor(private datePipe:DatePipe ,private rout : Router) {
     this.second=timer(60000, -1000)
     this.minut=timer(60000, 60000)
    // this.hour=timer(60000*60, - 60000*60) 
@@ -68,6 +73,22 @@ export class HomePage implements OnInit {
            
   }
  
+  options(){
+    
+  }
+
+mazdDetails(){
+  // let navigationExtras: NavigationExtras = {
+  //   queryParams: {
+  //     payInvo: JSON.stringify(payInvo),
+  //     sub_name: JSON.stringify(sub_name),
+  //     user_info:JSON.stringify(this.user_info),
+  //     store_info:JSON.stringify(this.store_info),
+  //     itemList:JSON.stringify(itemList)
+  //   }
+  // };
+  this.rout.navigate(['mazad-details']); 
+}
 
   prepare(){ 
   

@@ -6,7 +6,23 @@ import { HomePage } from './home.page';
 const routes: Routes = [
   {
     path: '',
-    component: HomePage
+    component: HomePage,
+    children: [
+      {
+        path: 'mazad-details',
+        loadChildren: () => import('../mzad-details/mzad-details.module').then(m => m.MzadDetailsPageModule)
+      }, 
+      {
+        path: '',
+        redirectTo: '/tabs/home',
+        pathMatch: 'full'
+      }
+    ]
+  },
+  {
+    path: '',
+    redirectTo: '/tabs/home',
+    pathMatch: 'full'
   }
 ];
 

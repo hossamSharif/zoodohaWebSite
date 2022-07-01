@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MzadDetailsPageRoutingModule } from './mzad-details-routing.module';
+import { MzadDetailsPageRoutingModule } from './mzad-details-routing.module'; 
 
 import { MzadDetailsPage } from './mzad-details.page';
 
@@ -12,7 +12,7 @@ import { MzadDetailsPage } from './mzad-details.page';
   imports: [
     CommonModule,
     FormsModule,
-    IonicModule,
+    IonicModule, 
     MzadDetailsPageRoutingModule
   ],
   declarations: [MzadDetailsPage]

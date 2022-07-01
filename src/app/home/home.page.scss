@@ -8,14 +8,40 @@
     border-color: var(--ion-color-light-shade);
 }
 
-.w100{
-width: 100%;
+.badge{
+    padding-top: 4px;
+    padding-bottom: 5px;
+    padding-right: 13px;
+    padding-left: 14px;
 }
 
+
+.padding5{
+padding-top: 5px;
+}
 --ion-padding{
     padding-left: unset;
     padding-right: unset;
     padding-inline-start: var(--ion-padding, 9px);
     padding-inline-end: var(--ion-padding, 9px);
+}
+
+.timercol{
+    background-color: var(--ion-color-light-tint);
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+.htext{
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 1px;
+}
+.hnom{
+    text-align: center;
+    margin-top: 1px;
+}
+
+.img{
+    height: 100%;
 }
 
