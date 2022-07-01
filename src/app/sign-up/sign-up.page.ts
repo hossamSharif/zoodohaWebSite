@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { NavigationExtras, Router } from '@angular/router'
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.page.html',
@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignUpPage implements OnInit {
 
-  constructor() { }
+  constructor(private rout : Router) { }
 
   ngOnInit() {
   }
 
+  login(){
+    this.rout.navigate(['login']); 
+  }
+  froget(){
+    this.rout.navigate(['forget-password']); 
+
+  }
+  verify(){
+    this.rout.navigate(['verify']); 
+
+  }
 }

@@ -18,5 +18,9 @@ export class LoginPage implements OnInit {
   signUp(){
     this.rout.navigate(['sign-up']); 
   }
+  froget(){
+    this.rout.navigate(['forget-password']); 
+
+  }
 
 }
