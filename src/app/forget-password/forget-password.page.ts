@@ -15,6 +15,5 @@ export class ForgetPasswordPage implements OnInit {
 
   newPassword(){
     this.rout.navigate(['new-password']); 
-
   }
 }
