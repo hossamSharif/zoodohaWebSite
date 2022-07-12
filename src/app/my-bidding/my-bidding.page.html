@@ -1,188 +1,15 @@
 <ion-header>
-  <ion-toolbar dir="rtl">
+  <ion-toolbar dir="rtl"> 
     <ion-title>
-      <ion-icon name="home-outline"></ion-icon>
-
-      الرئيسية
+      <ion-icon name="hand-right-outline"></ion-icon>
+      مزاداتي 
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-grid> 
-    <ion-row class="ion-margin-top ion-justify-content-center">
-      <ion-col size="10" class="ion-text-center">
-        <ion-chip>
-          <ion-icon color= "dark" name="chevron-down"></ion-icon> 
-          <ion-label>الحالة</ion-label>
-        </ion-chip>  
-        <ion-chip>
-          <ion-icon  color= "dark" name="chevron-down"></ion-icon> 
-          <ion-label>التصنيف</ion-label>
-        </ion-chip>
-        <ion-chip>
-          <ion-icon  color= "dark" name="chevron-down"></ion-icon> 
-          <ion-label>الدولة</ion-label>
-        </ion-chip>
-      </ion-col>
-       
-       
-      <!-- <ion-slides  [options]="slideOpts">
-        <ion-slide (click)="options()">
-          <ion-select value="brown" okText="موافق" cancelText="إلغاء" [multiple]="true">
-            <ion-select-option>
-              بدون
-            </ion-select-option>
-            <ion-select-option>
-              إلكترويات
-            </ion-select-option>
-            <ion-select-option>
-              عقارات
-            </ion-select-option>
-            <ion-select-option>
-              رحلات سياحة
-            </ion-select-option>
-            <ion-select-option>
-              أخري
-            </ion-select-option>
-          </ion-select>
-
-         
-         
-        </ion-slide>
-        <ion-slide>
-          <ion-select value="dark" okText="موافق" cancelText="إلغاء">
-            <ion-select-option>
-              مزاد قادم
-            </ion-select-option>
-            <ion-select-option>
-              مزاد جاري
-            </ion-select-option>
-            <ion-select-option>
-              مزاد منتهي
-            </ion-select-option> 
-          </ion-select>
-         
-        </ion-slide>
-       <ion-slide>
-          <ion-select value="yall" okText="موافق" cancelText="إلغاء" [multiple]="true">
-            <ion-select-option>
-              بدون
-            </ion-select-option>
-            <ion-select-option>
-              إلكترويات
-            </ion-select-option>
-            <ion-select-option>
-              عقارات
-            </ion-select-option>
-            <ion-select-option>
-              رحلات سياحة
-            </ion-select-option>
-            <ion-select-option>
-              أخري
-            </ion-select-option>
-          </ion-select>
-          
-        </ion-slide>  
-      </ion-slides> -->
-     
-      </ion-row>
-</ion-grid>
-<!-- 
-  <ion-icon name="chevron-down-outline"></ion-icon>
-  filter grid -->
-
+<ion-content> 
 <ion-grid> 
-  <ion-row class="ion-padding ">
-    <ion-col size="12" class="radus5 borderlight w100 ">
-      <ion-grid class="ion-no-padding" dir="rtl"> 
-        <ion-row  >
-          <ion-item class="w100" lines="none"> 
-            <ion-badge color="warning" slot="end" class="badge">
-              مزاد قادم
-              <ion-icon slot="end" name="ellipse" color="danger"></ion-icon> 
-            </ion-badge>
-            <ion-label>Mercedes Maybach 2021</ion-label>
-          </ion-item>
-        </ion-row>
-        <!-- imager and detail -->
-        <ion-row  >
-          <ion-col size="6" > 
-                  <img class="radus5 img" src="../../assets/imgs/mars.jpg"/>  
-          </ion-col>
-          <ion-col size="6">
-            <ion-grid   dir ="rtl" class="ion-no-padding">
-              <ion-row class="ion-margin ion-justify-content-center">
-                <ion-label > 
-                  <ion-text >{{startDate}} :</ion-text>    
-                  <ion-text  color="primary"> <b>{{startDate | date:'EEE'}}</b> </ion-text>
-                </ion-label>
-                <ion-label class="ion-text-center padding5">
-                  <ion-text color="medium" >02 : 30 ص</ion-text>
-                 </ion-label>
-              </ion-row>
-              <ion-row  class="ion-margin"  class="ion-margin ion-justify-content-center">
-                <ion-label> 
-                  <ion-text color="primary"><b>المدة :</b>  </ion-text>
-                  <ion-text>   3 ساعات </ion-text>
-                 
-                </ion-label>
-                <!-- <ion-label> 
-                  <ion-text color="primary"><b>دفتر :</b>  </ion-text>
-                  <ion-text>   100 </ion-text>
-                  <ion-text>   ر.س </ion-text>
-                </ion-label> -->
-              </ion-row>
-              <ion-row  class="ion-margin" class="ion-margin ion-justify-content-center">
-                <ion-label> 
-                  <ion-text color="primary"><b>العربون :</b>  </ion-text>
-                  <ion-text>   3000 </ion-text>
-                  <ion-text>   ر.س </ion-text>
-                </ion-label>
-                <!-- <ion-label> 
-                  <ion-text color="primary"><b>دفتر :</b>  </ion-text>
-                  <ion-text>   100 </ion-text>
-                  <ion-text>   ر.س </ion-text>
-                </ion-label> -->
-              </ion-row>
-            
-            </ion-grid> 
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col size="6" class="timercol">
-            <h6 class="htext">
-              <ion-text>يوم : </ion-text>
-              <ion-text>ساعة : </ion-text>
-              <ion-text>دقيقة : </ion-text>
-              <ion-text>ثانية </ion-text>
-            </h6>
-            <h6 class="hnom">
-              <ion-text color="primary"><b>{{da}} :</b> </ion-text>
-              <ion-text color="primary"><b>{{hr}} :</b> </ion-text>
-              <ion-text color="primary"><b>{{mn}} :</b> </ion-text>
-              <ion-text color="primary"><b>{{sc}}</b> </ion-text>
-            </h6>
-          </ion-col>
-
-        </ion-row>
-        <ion-row  class="ion-margin-top" dir="rtl">
-          <ion-col size="4">
-            <ion-item class="w100" lines="none">
-            <ion-button  fill="clear" size="small">
-              <b><ion-icon name="share-social" color="primary" style="font-size: 22px;"></ion-icon></b>
-            </ion-button>
-          </ion-item>
-          </ion-col>
-          <ion-col size="4">
-            <ion-button expand="block" (click)="mazdDetails()">
-               <h5><b>التفاصيل</b></h5>
-            </ion-button>
-          </ion-col>
-        </ion-row>
-        </ion-grid>
-    </ion-col>
-
+  <ion-row class="ion-padding "> 
     <ion-col size="12" class="radus5 borderlight w100 ion-margin-top ">
       <ion-grid class="ion-no-padding" dir="rtl"> 
         <ion-row  >
@@ -255,13 +82,56 @@
           </ion-col>
 
         </ion-row>
+        <ion-row>
+          <ion-grid class="ion-no-margin  ion-no-padding ion-padding-bottom" dir="rtl">
+            <ion-row class="ion-no-margin  ion-no-padding"> 
+              <ion-col class="ion-text-center">
+                <ion-card-content  class="ion-no-padding ion-padding-top"> 
+                    <ion-text color="primary"><b>أعلي مزايدة</b> </ion-text><br> 
+                    <ion-text> 3000 </ion-text>
+                    <ion-text> ر.س </ion-text> 
+                  </ion-card-content>
+              </ion-col>
+              <ion-col class="ion-text-center">
+                <ion-card-content  class="ion-no-padding ion-padding-top"> 
+                    <ion-text color="primary"><b>اخر مزايدة لك</b> </ion-text><br> 
+                    <ion-text> 0 </ion-text>
+                    <ion-text> ر.س </ion-text> 
+                  </ion-card-content>
+              </ion-col>
+              <ion-col class="ion-text-center">
+                <ion-card-content class="ion-no-padding ion-padding-top">  
+                      <ion-text color="primary"><b>مزايداتك المتبقية</b> </ion-text><br> 
+                       <ion-text> 3 </ion-text> 
+                       <ion-text>  من </ion-text>  
+                       <ion-text>  3</ion-text>  
+                </ion-card-content>
+              </ion-col>
+
+                <!-- <ion-col class="ion-text-center totcol">
+                <ion-card-content> 
+                  <ion-text color="primary"><b>الحالة </b>  </ion-text><br>
+                  <ion-text>   مشارك </ion-text>
+                  <ion-text>   ر.س </ion-text> 
+                </ion-card-content>
+              </ion-col>   -->
+            </ion-row>
+          </ion-grid> 
+        </ion-row>
         <ion-row  class="ion-margin-top" dir="rtl">
-          <ion-col size="4">
-            <ion-item class="w100" lines="none">
-            <ion-button  fill="clear" size="small">
-              <b><ion-icon name="share-social" color="primary" style="font-size: 22px;"></ion-icon></b>
-            </ion-button>
-          </ion-item>
+          <ion-col size="2" offset="2" class="custDiv">
+            
+            <ion-label>
+              <ion-icon   name="accessibility" color="success" style="font-size: 22px;"></ion-icon> <br>
+              <ion-note>مشارك</ion-note>
+            </ion-label>
+                
+             
+            
+              
+              <!-- <b><ion-icon  name="walk-outline" color="danger" style="font-size: 22px;"></ion-icon></b> -->
+            
+          
           </ion-col>
           <ion-col size="4">
             <ion-button expand="block" (click)="mazdDetails()">
@@ -272,6 +142,137 @@
         </ion-grid>
     </ion-col>
 
+    <ion-col size="12" class="radus5 borderlight w100 ion-margin-top ">
+      <ion-grid class="ion-no-padding" dir="rtl"> 
+        <ion-row  >
+          <ion-item class="w100" lines="none"> 
+            <ion-badge slot="end" class="badge">
+              مزاد جاري
+              <ion-icon slot="end" name="ellipse" color="danger"></ion-icon> 
+            </ion-badge>
+            <ion-label>IPHONE PRO 13</ion-label>
+          </ion-item>
+        </ion-row>
+        <!-- imager and detail -->
+        <ion-row  >
+          <ion-col size="6" > 
+              <img class="radus5 img" src="../../assets/imgs/mars.jpg"/>  
+          </ion-col>
+          <ion-col size="6">
+            <ion-grid   dir ="rtl" class="ion-no-padding">
+              <ion-row class="ion-margin ion-justify-content-center">
+                <ion-label > 
+                  <ion-text >{{startDate}} :</ion-text>    
+                  <ion-text  color="primary"> <b>{{startDate | date:'EEE'}}</b> </ion-text>
+                </ion-label>
+                <ion-label class="ion-text-center padding5">
+                  <ion-text color="medium" >02 : 30 ص</ion-text>
+                 </ion-label>
+              </ion-row>
+              <ion-row  class="ion-margin"  class="ion-margin ion-justify-content-center">
+                <ion-label> 
+                  <ion-text color="primary"><b>المدة :</b>  </ion-text>
+                  <ion-text>   3 ساعات </ion-text>
+                 
+                </ion-label>
+                <!-- <ion-label> 
+                  <ion-text color="primary"><b>دفتر :</b>  </ion-text>
+                  <ion-text>   100 </ion-text>
+                  <ion-text>   ر.س </ion-text>
+                </ion-label> -->
+              </ion-row>
+              <ion-row  class="ion-margin" class="ion-margin ion-justify-content-center">
+                <ion-label> 
+                  <ion-text color="primary"><b>العربون :</b>  </ion-text>
+                  <ion-text>   3000 </ion-text>
+                  <ion-text>   ر.س </ion-text>
+                </ion-label>
+                <!-- <ion-label> 
+                  <ion-text color="primary"><b>دفتر :</b>  </ion-text>
+                  <ion-text>   100 </ion-text>
+                  <ion-text>   ر.س </ion-text>
+                </ion-label> -->
+              </ion-row>
+            
+            </ion-grid> 
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6" class="timercol">
+            <h6 class="htext">
+              <ion-text>يوم : </ion-text>
+              <ion-text>ساعة : </ion-text>
+              <ion-text>دقيقة : </ion-text>
+              <ion-text>ثانية </ion-text>
+            </h6>
+            <h6 class="hnom">
+              <ion-text color="primary"><b>{{da}} :</b> </ion-text>
+              <ion-text color="primary"><b>{{hr}} :</b> </ion-text>
+              <ion-text color="primary"><b>{{mn}} :</b> </ion-text>
+              <ion-text color="primary"><b>{{sc}}</b> </ion-text>
+            </h6>
+          </ion-col>
+
+        </ion-row>
+        <ion-row>
+          <ion-grid class="ion-no-margin  ion-no-padding ion-padding-bottom" dir="rtl">
+            <ion-row class="ion-no-margin  ion-no-padding"> 
+              <ion-col class="ion-text-center">
+                <ion-card-content  class="ion-no-padding ion-padding-top"> 
+                    <ion-text color="primary"><b>أعلي مزايدة</b> </ion-text><br> 
+                    <ion-text> 3000 </ion-text>
+                    <ion-text> ر.س </ion-text> 
+                  </ion-card-content>
+              </ion-col>
+              <ion-col class="ion-text-center">
+                <ion-card-content  class="ion-no-padding ion-padding-top"> 
+                    <ion-text color="primary"><b>اخر مزايدة لك</b> </ion-text><br> 
+                    <ion-text> 0 </ion-text>
+                    <ion-text> ر.س </ion-text> 
+                  </ion-card-content>
+              </ion-col>
+              <ion-col class="ion-text-center">
+                <ion-card-content class="ion-no-padding ion-padding-top">  
+                      <ion-text color="primary"><b>مزايداتك المتبقية</b> </ion-text><br> 
+                       <ion-text> 3 </ion-text> 
+                       <ion-text>  من </ion-text>  
+                       <ion-text>  3</ion-text>  
+                </ion-card-content>
+              </ion-col>
+
+                <!-- <ion-col class="ion-text-center totcol">
+                <ion-card-content> 
+                  <ion-text color="primary"><b>الحالة </b>  </ion-text><br>
+                  <ion-text>   مشارك </ion-text>
+                  <ion-text>   ر.س </ion-text> 
+                </ion-card-content>
+              </ion-col>   -->
+            </ion-row>
+          </ion-grid> 
+        </ion-row>
+        <ion-row  class="ion-margin-top" dir="rtl">
+          <ion-col size="2" offset="2" class="custDiv">
+            
+            <ion-label>
+              <ion-icon   name="walk" color="medium" style="font-size: 22px;"></ion-icon> <br>
+              <ion-note>غادرت</ion-note>
+            </ion-label>
+                
+             
+            
+              
+              <!-- <b><ion-icon  name="walk-outline" color="danger" style="font-size: 22px;"></ion-icon></b> -->
+            
+          
+          </ion-col>
+          <ion-col size="4">
+            <ion-button expand="block" (click)="mazdDetails()">
+               <h5><b>التفاصيل</b></h5>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+        </ion-grid>
+    </ion-col>
    
 
   </ion-row>

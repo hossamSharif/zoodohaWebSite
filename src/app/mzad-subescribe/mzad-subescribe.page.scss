@@ -1,0 +1,18 @@
+.footer{
+    border-style: solid;
+    border-width: 0.3px;
+    border-color: var(--ion-color-light-shade);
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.footer-md::before{
+    background-image:  none;
+}
+
+.action-sheet-container{
+    direction: rtl;
+}
+  
+       
+ 

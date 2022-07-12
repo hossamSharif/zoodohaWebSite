@@ -1,9 +1,146 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>cart</ion-title>
+  <ion-toolbar dir="rtl">
+    <ion-title>
+      <ion-icon name="receipt-outline"></ion-icon>
+     الطلبات 
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
-</ion-content>
+<ion-content> 
+  <ion-grid> 
+    <ion-row class="ion-padding "> 
+      <ion-col size="12" class="radus5 borderlight w100 ion-margin-top ">
+        <ion-grid class="ion-no-padding" dir="rtl"> 
+          <ion-row  >
+            <ion-item class="w100" lines="none"> 
+              <ion-badge slot="end" class="badge">
+                قيد المعالجة
+                <ion-icon slot="end" name="ellipse" color="danger"></ion-icon> 
+              </ion-badge>
+              <ion-label>IPHONE PRO 13</ion-label>
+            </ion-item>
+          </ion-row>
+           
+          <ion-row  >
+            <ion-col size="6" > 
+                    <img class="radus5 img" src="../../assets/imgs/iPhone2.jpg"/>  
+            </ion-col>
+            <ion-col size="6">
+              <ion-grid   dir ="rtl" class="ion-no-padding">
+                <ion-row class="ion-margin-top ion-padding-start">
+                  <ion-label > 
+                   ربحت المزايدة علي المنتج
+                  </ion-label> 
+                </ion-row>
+                <ion-row    class="ion-margin-top ion-padding-start">
+                  <ion-label> 
+                    <ion-note color="primary"><b>رقم المزاد :</b>  </ion-note>
+                    <ion-note>  #76173</ion-note> 
+                  </ion-label> 
+                </ion-row> 
+                <ion-row  class="ion-margin-top ion-padding-start">
+                  <ion-label> 
+                    <ion-note color="primary"><b>سعر المنتج :</b>  </ion-note>
+                    <ion-note>   13000 </ion-note>
+                    <ion-note>   ر.س </ion-note>
+                  </ion-label>
+                </ion-row>
+              </ion-grid> 
+            </ion-col>
+          </ion-row>
+         
+          <!-- <ion-row>
+            <ion-grid class="ion-no-margin  ion-no-padding ion-padding-bottom" dir="rtl">
+              <ion-row class="ion-no-margin  ion-no-padding"> 
+                <ion-col class="ion-text-center">
+                  <ion-card-content  class="ion-no-padding ion-padding-top"> 
+                      <ion-text color="primary"><b>أعلي مزايدة</b> </ion-text><br> 
+                      <ion-text> 3000 </ion-text>
+                      <ion-text> ر.س </ion-text> 
+                    </ion-card-content>
+                </ion-col>
+                <ion-col class="ion-text-center">
+                  <ion-card-content  class="ion-no-padding ion-padding-top"> 
+                      <ion-text color="primary"><b>اخر مزايدة لك</b> </ion-text><br> 
+                      <ion-text> 0 </ion-text>
+                      <ion-text> ر.س </ion-text> 
+                    </ion-card-content>
+                </ion-col>
+                <ion-col class="ion-text-center">
+                  <ion-card-content class="ion-no-padding ion-padding-top">  
+                        <ion-text color="primary"><b>مزايداتك المتبقية</b> </ion-text><br> 
+                         <ion-text> 3 </ion-text> 
+                         <ion-text>  من </ion-text>  
+                         <ion-text>  3</ion-text>  
+                  </ion-card-content>
+                </ion-col> 
+              </ion-row>
+            </ion-grid> 
+          </ion-row> -->
+          <ion-row  class="ion-margin-top ion-justify-content-center" dir="rtl"> 
+            <ion-col size="4">
+              <ion-button expand="block" (click)="mazdDetails()">
+                 <h5><b>التفاصيل</b></h5>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+          </ion-grid>
+      </ion-col>
+  
+      <ion-col size="12" class="radus5 borderlight w100 ion-margin-top ">
+        <ion-grid class="ion-no-padding" dir="rtl"> 
+          <ion-row  >
+            <ion-item class="w100" lines="none"> 
+              <ion-badge slot="end" class="badge">
+                   مكتمل 
+                <ion-icon slot="end" name="ellipse" color="danger"></ion-icon> 
+              </ion-badge>
+              <ion-label>IPHONE PRO 13</ion-label>
+            </ion-item>
+          </ion-row>
+           
+          <ion-row  >
+            <ion-col size="6" > 
+              <img class="radus5 img" src="../../assets/imgs/mars.jpg"/>   
+            </ion-col>
+            <ion-col size="6">
+              <ion-grid   dir ="rtl" class="ion-no-padding">
+                <ion-row class="ion-margin-top ion-padding-start">
+                  <ion-label > 
+                   ربحت المزايدة علي المنتج
+                  </ion-label> 
+                </ion-row>
+                <ion-row    class="ion-margin-top ion-padding-start">
+                  <ion-label> 
+                    <ion-note color="primary"><b>رقم المزاد :</b>  </ion-note>
+                    <ion-note>  #76173</ion-note> 
+                  </ion-label> 
+                </ion-row> 
+                <ion-row  class="ion-margin-top ion-padding-start">
+                  <ion-label> 
+                    <ion-note color="primary"><b>سعر المنتج :</b>  </ion-note>
+                    <ion-note>   20000 </ion-note>
+                    <ion-note>   ر.س </ion-note>
+                  </ion-label>
+                </ion-row>
+              </ion-grid> 
+            </ion-col>
+          </ion-row>
+         
+       
+          <ion-row  class="ion-margin-top ion-justify-content-center" dir="rtl"> 
+            <ion-col size="4">
+              <ion-button expand="block" (click)="mazdDetails()">
+                 <h5><b>التفاصيل</b></h5>
+              </ion-button>
+            </ion-col>
+          </ion-row>
+          </ion-grid>
+      </ion-col>
+     
+  
+    </ion-row>
+  </ion-grid>
+  
+  </ion-content>

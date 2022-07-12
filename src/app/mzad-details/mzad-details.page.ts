@@ -1,7 +1,9 @@
 import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ActionSheetController, LoadingController, ModalController, ToastController } from '@ionic/angular';
 import { Observable, timer } from 'rxjs';
+import { MzadSubescribePage } from '../mzad-subescribe/mzad-subescribe.page';
 
 @Component({
   selector: 'app-mzad-details',
@@ -19,7 +21,7 @@ export class MzadDetailsPage implements OnInit {
       hr :any  = 10
       mn:any  = 30
       sc :any =30
-  constructor(private datePipe:DatePipe ,private rout : Router) {
+  constructor(private loadingController:LoadingController,private toast:ToastController,private actionSheetCtl:ActionSheetController ,private datePipe:DatePipe ,private rout : Router,private modalController:ModalController) {
     this.second=timer(60000, -1000)
     this.minut=timer(60000, 60000)
     this.prepare()
@@ -38,4 +40,62 @@ export class MzadDetailsPage implements OnInit {
   ngOnInit() {
   }
 
+
+  async presentModal(id?, status?) { 
+    
+    const modal = await this.modalController.create({
+      component: MzadSubescribePage ,
+      componentProps: {
+        "item":"",
+        "status": ""
+      }
+    });
+    
+    modal.onDidDismiss().then((dataReturned) => {
+      if (dataReturned !== null) {
+        console.log(dataReturned )
+        this.doAfterDissmiss(dataReturned)
+      }
+    });
+ 
+    return await modal.present(); 
+  }
+
+   doAfterDissmiss(dataReturned){
+    this.presentToast("تم الإشتراك بنجاح , يمكنك المزايدة الأن" ,'success')
+    this.rout.navigate(['live-mzad']);  
+   }
+
+   async presentLoadingWithOptions(msg?) {
+    const loading = await this.loadingController.create({
+      spinner: 'bubbles',
+      mode:'ios',
+      duration: 5000,
+      message: msg,
+      translucent: true,
+     // cssClass: 'custom-class custom-loading',
+      backdropDismiss: false
+    });
+    await loading.present();
+  
+    const { role, data } = await loading.onDidDismiss();
+    console.log('Loading dismissed with role:', role);
+  }
+  
+
+   async presentToast(msg,color?) {
+    const toast = await this.toast.create({
+      message: msg,
+      duration: 2000,
+      color:color,
+      cssClass:'cust_Toast',
+      mode:'ios',
+      position:'top' 
+    });
+    toast.present();
+  }
+
+   subiscribe(){
+    this.presentModal()
+   }
 }

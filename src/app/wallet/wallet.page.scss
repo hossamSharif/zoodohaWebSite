@@ -1,0 +1,21 @@
+ 
+.f30{
+    font-size: 30px;
+}
+.float{
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+}
+.bg{
+    background-color: var(--ion-color-primary);
+}
+.bgtool{
+    background-image: url('../../assets/imgs/bgtoolbar2.png'); 
+    background-blend-mode: soft-light;
+    background-color: var(--ion-color-primary-tint);
+}
+
+ion-toolbar{
+    --opacity	:0
+}

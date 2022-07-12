@@ -1,9 +1,84 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>wallet</ion-title>
+  <ion-toolbar dir="rtl"> 
+    <ion-title>
+      <ion-icon name="wallet-outline"></ion-icon>
+      المحفظة</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
 
+<ion-header class="bgtool ">
+  <ion-toolbar dir="rtl"  class=" ion-margin-bottom ion-margin-top">
+    <ion-title class="ion-text-center" color="light">
+      <h2 color="light"><b>الرصيــد</b></h2>
+    </ion-title>
+    <ion-title class="ion-text-center" color="light">
+      <h2 ><b>10000</b>
+        <ion-text>ر.س</ion-text>
+      </h2> 
+      
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-grid class="ion-no-margin  ion-no-padding"  dir="rtl" > 
+    <ion-row class="ion-no-padding">
+      <ion-card class="w100"> 
+        <ion-list>
+          <ion-item class="w100">
+            <ion-icon name="card-outline"  color="primary"></ion-icon> 
+           <ion-label> حساباتي </ion-label> 
+          </ion-item> 
+          <ion-item lines="none"   class="ion-margin-top">
+            <ion-icon name="logo-google"></ion-icon> 
+            <ion-label>قوقل باي</ion-label>
+            <ion-icon slot="end" name="chevron-back-outline"></ion-icon>
+          </ion-item>
+           <ion-item lines="none" > 
+            <ion-icon name="logo-apple"></ion-icon>
+            <ion-label>ابل باي</ion-label>
+            <ion-icon slot="end" name="chevron-back-outline"></ion-icon> 
+          </ion-item>
+        </ion-list> 
+       
+         
+      </ion-card> 
+      <ion-card class="w100"> 
+        <ion-list>
+          <ion-item class="w100">
+            <ion-icon name="receipt-outline"  color="primary"></ion-icon> 
+           <ion-label>معاملات حديثة </ion-label> 
+            <ion-button slot="end"  fill="clear" color="primary">عرض الكل
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </ion-button> 
+          </ion-item> 
+          <ion-item  lines="none"   class="ion-margin-top">
+            <ion-icon name="arrow-up-outline" color="danger"></ion-icon> 
+            <ion-label> رسوم مشاركة في مزاد رقم</ion-label>
+            <ion-badge slot="end" outline="true" color="danger"><b>-3000</b><ion-text>ر.س</ion-text></ion-badge>
+            <ion-icon slot="end" name="chevron-back-outline"></ion-icon> 
+           
+          </ion-item>
+           <ion-item lines="none"   class="ion-margin-bottom"  >
+            <ion-icon name="arrow-down-outline" color="success"></ion-icon> 
+            <ion-label> شحن رصيد عن طريق مدي</ion-label>
+            <ion-badge slot="end" outline="true" color="success"><b>+3000</b><ion-text>ر.س</ion-text></ion-badge>
+            <ion-icon slot="end" name="chevron-back-outline"></ion-icon>  
+          </ion-item>
+        </ion-list> 
+       
+         
+      </ion-card> 
+
+      </ion-row>
+    </ion-grid>
+    <ion-fab slot="fixed" class="float">
+      <ion-chip class="ion-padding" class="bg">
+        <ion-label color="light">شحن المحفظة</ion-label> 
+       <ion-icon name="add-circle"  color="light" class="f30" ></ion-icon>
+       
+     </ion-chip>
+   </ion-fab>
 </ion-content>

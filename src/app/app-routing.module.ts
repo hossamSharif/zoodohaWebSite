@@ -51,6 +51,22 @@ const routes: Routes = [
   {
     path: 'select',
     loadChildren: () => import('./select/select.module').then( m => m.SelectPageModule)
+  },
+  {
+    path: 'my-bidding',
+    loadChildren: () => import('./my-bidding/my-bidding.module').then( m => m.MyBiddingPageModule)
+  },
+  {
+    path: 'live-mzad',
+    loadChildren: () => import('./live-mzad/live-mzad.module').then( m => m.LiveMzadPageModule)
+  },
+  {
+    path: 'mzad-subescribe',
+    loadChildren: () => import('./mzad-subescribe/mzad-subescribe.module').then( m => m.MzadSubescribePageModule)
+  },
+  {
+    path: 'order-details',
+    loadChildren: () => import('./order-details/order-details.module').then( m => m.OrderDetailsPageModule)
   }
 ];
 @NgModule({

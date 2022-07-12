@@ -1,0 +1,103 @@
+<ion-header>
+  <ion-toolbar dir="rtl">
+    <ion-buttons slot="end"> 
+      <ion-button fill="clear" (click)="closeModal()"> 
+        <ion-icon name="close-circle-outline" color="danger"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>الإشتراك في مزاد</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="ion-no-margin  ion-no-padding"  dir="rtl" >
+    <ion-row class="ion-no-padding"> 
+      <ion-card class="w100"> 
+        <ion-card-header>  
+            <ion-card-title>
+             <ion-icon name="cash-outline" color="primary"></ion-icon> 
+              رسوم المشاركة
+            </ion-card-title>
+          </ion-card-header>
+          <ion-grid class="ion-no-margin  ion-no-padding ion-padding-bottom" dir="rtl">
+            <ion-row class="ion-no-margin  ion-no-padding"> 
+              <ion-col size="12" class="ion-text-center">
+                <ion-item lines="none"> 
+                    <ion-label><ion-text color="primary"><b>العربون</b> </ion-text>  </ion-label>
+                    <ion-label slot="end">
+                      <ion-text> 3000 </ion-text>
+                      <ion-text> ر.س </ion-text>
+                    </ion-label>
+                  </ion-item>
+              </ion-col>
+              <ion-col size="12" class="ion-text-center">
+                <ion-item>  
+                  <ion-label>
+                    <ion-text color="primary"><b>رسوم دفتر </b> </ion-text>
+                  </ion-label>
+                  <ion-label slot="end">
+                    <ion-text> 1000 </ion-text>
+                    <ion-text> ر.س </ion-text>
+                  </ion-label>
+                </ion-item>
+              </ion-col>
+
+              <ion-col size="12" class="ion-text-center">
+                <ion-item lines="none"> 
+                  <ion-label>
+                    <ion-text color="primary"><b>المجموع </b> </ion-text>
+                  </ion-label>
+                  <ion-label slot="end">
+                    <ion-text> 4000 </ion-text>
+                    <ion-text> ر.س </ion-text>
+                  </ion-label>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-grid> 
+      </ion-card> 
+      <ion-card class="w100">
+        <ion-card-header>
+          <ion-card-title>
+            <ion-icon name="bookmark-outline" color="primary"></ion-icon> 
+            الشروط والخصوصية
+          </ion-card-title> 
+        </ion-card-header>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="12" >
+             <ion-card-content>
+              <ion-icon name="pin" color="primary"></ion-icon>
+              <ion-label>تعلن شركة زد للمزادات العقارية عن البيع بالمزاد العلني لمجموعة من العقارات المتنوعة تحت إشراف مركز الاسناد والتصفية «إنفاذ» وبقرار من محكمة التنفيذ</ion-label>
+            </ion-card-content>
+            <ion-item>
+              <ion-label>أوافق علي الشروط </ion-label>
+              <ion-checkbox></ion-checkbox>
+            </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card> 
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer class="footer">
+  <ion-grid dir="rtl">
+    <ion-row>
+      <ion-col size="6">
+       <ion-button expand="block" type="outline" (click)="presentActionSheet()"> 
+        <h5>دفــع </h5>
+       </ion-button>
+      </ion-col>
+      <ion-col size="6" class="ion-text-center">
+        <h4 class="ion-no-margin">
+        <ion-text color="primary">
+            رسوم الإشتراك
+        </ion-text> <br>  
+        <ion-text> 4000 </ion-text>
+         <ion-text> ر.س </ion-text>
+       </h4>  
+      </ion-col> 
+    </ion-row>
+  </ion-grid>
+</ion-footer>
